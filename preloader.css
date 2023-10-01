@@ -1,0 +1,26 @@
+body{
+    background:linear-gradient(to bottom,#cee7d4 0%,#f5f4c9 100%);background-repeat:no-repeat;background-attachment:fixed;overflow:hidden;perspective:1000px}
+
+#loader{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100vw;
+    height:100vh
+}
+#loading{
+    
+    position:relative;
+    top:calc(45vh);
+    text-align:center;
+    z-index:1;
+    transition:all .75s ease;-webkit-animation-name:spin;-webkit-animation-duration:5s;animation-name:spin;animation-duration:5s;animation-iteration-count:infinite;-webkit-animation-iteration-count:infinite;-webkit-animation-timing-function:linear;animation-timing-function:linear
+}
+#loading img{
+    width: 100px;
+    height: 100px;
+}
+@keyframes spin {
+from{transform:rotateX(-3deg) rotateY(0deg)}
+to{transform:rotateX(-3deg) rotateY(360deg)}
+}

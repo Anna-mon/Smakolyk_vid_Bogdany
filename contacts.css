@@ -1,0 +1,494 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    background-color: rgba(247, 243, 232, 1);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+    
+}
+.order_form{
+    width: 1000px;
+    margin: 60px auto;
+    
+}
+form{
+    width: 1000px;
+    height: 620px;
+    background-color: bisque;
+    border-radius: 10px;
+    padding: 40px 60px;
+    font-size: 20px;
+    color: rgb(139, 86, 86);
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.div1,
+ .div2{
+    width: 440px;
+}
+
+h2{
+    color: rgb(139, 86, 86);
+    text-align: center;
+    font-size: 22px;
+    padding: 10px 25px;
+    font-weight: 500;
+}
+.inp{
+    width: 420px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(233, 209, 111, 0.182);
+    outline: none;
+    color: rgb(217, 178, 38);
+    padding-left: 20px;
+    font-size: 22px;
+    margin-bottom: 20px;
+    
+    
+}
+label{
+    padding-left: 6px;
+    margin-bottom: 20px;
+    
+}
+.texta{
+    width: 440px;
+    height: 210px;
+    resize: none;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(233, 209, 111, 0.182);
+    outline: none;
+    color: rgb(217, 178, 38);
+    padding-left: 20px;
+    font-size: 18px;
+    margin-bottom: 20px;
+    padding-top: 10px;
+}
+.texta::placeholder{
+    color: rgb(139, 86, 86);
+    font-size: 18px;
+}
+.submit{
+    display: block;
+    margin: auto;
+    margin-top: 30px;
+    width: 300px;
+    height: 100px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background-color: rgb(226, 113, 138);
+    color: rgb(139, 86, 86);
+    font-size: 22px;
+    font-weight: 500;
+    cursor: pointer;
+    box-shadow: 0px 0px 17px 0px rgb(222, 158, 172);
+}
+
+input[type=date]::-webkit-calendar-picker-indicator{
+    background-image: url(pngimg.com\ -\ heart_PNG51253.png);
+    cursor: pointer;
+    
+}
+.error{
+    font-size: 14px;
+    color: rgb(227, 100, 128);
+    padding-left: 10px;
+    display: none;
+    
+}
+.cont{
+    background-color: rgb(227, 100, 128);
+    height: 1200px;
+    color: rgb(139, 86, 86);
+    text-align: center;
+    padding-top: 200px; 
+   
+}
+.thank{
+    width: 200px;
+    height: 200px;
+}
+.text-center{
+    width: 700px;
+    margin: 0 400px;
+}
+.contact_info{
+    display: block;
+    position: relative;
+    text-align: right;
+    padding: 0 260px;
+    margin: 60px 0;
+}
+.contact_info h2{
+    height: 100px;
+    line-height: 100px;
+}
+.interior{
+
+    width: 560px;
+    height: 420px;
+    object-fit: cover;
+    border-radius: 5px;
+    position: absolute;
+    z-index: 1;
+    left: 17%;
+    
+    
+   
+}
+.fasad{
+    width: 560px;
+    height: 420px;
+    object-fit: cover;
+    border-radius: 5px;
+    opacity: 0.8;
+}
+h3{
+    height: 40px;
+    margin-bottom: 60px;
+    color: rgb(139, 86, 86);
+    
+}
+iframe{
+    width: 1000px;
+    height: 470px;
+}
+@media (max-width: 1024px) {
+    .container{
+        background-color: rgba(247, 243, 232, 1);
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        
+        
+    }
+    .order_form{
+        width: 800px;
+        margin: 60px auto;
+        
+    }
+    form{
+        width: 800px;
+        height: 620px;
+        background-color: bisque;
+        border-radius: 5px;
+        padding: 40px 40px;
+        font-size: 18px;
+        color: rgb(139, 86, 86);
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+    .div1,
+     .div2{
+        width: 280px;
+    }
+    
+    h2{
+        color: rgb(139, 86, 86);
+        text-align: center;
+        font-size: 22px;
+        padding: 10px 25px;
+        font-weight: 500;
+    }
+    .inp{
+        width: 420px;
+        height: 40px;
+        border: none;
+        border-radius: 5px;
+        background-color: rgba(233, 209, 111, 0.182);
+        outline: none;
+        color: rgb(217, 178, 38);
+        padding-left: 20px;
+        font-size: 22px;
+        margin-bottom: 20px;
+        
+        
+    }
+    label{
+        padding-left: 6px;
+        margin-bottom: 20px;
+        
+    }
+    .texta{
+        width: 280px;
+        height: 210px;
+        resize: none;
+        border: none;
+        border-radius: 5px;
+        background-color: rgba(233, 209, 111, 0.182);
+        outline: none;
+        color: rgb(217, 178, 38);
+        padding-left: 20px;
+        font-size: 18px;
+        margin-bottom: 20px;
+        padding-top: 10px;
+    }
+    .texta::placeholder{
+        color: rgb(139, 86, 86);
+        font-size: 18px;
+    }
+    .submit{
+        display: block;
+        margin: auto;
+        margin-top: 30px;
+        width: 300px;
+        height: 100px;
+        border-radius: 10px;
+        border: none;
+        outline: none;
+        background-color: rgb(226, 113, 138);
+        color: rgb(139, 86, 86);
+        font-size: 22px;
+        font-weight: 500;
+        cursor: pointer;
+        box-shadow: 0px 0px 17px 0px rgb(222, 158, 172);
+    }
+    
+    input[type=date]::-webkit-calendar-picker-indicator{
+        background-image: url(pngimg.com\ -\ heart_PNG51253.png);
+        cursor: pointer;
+        
+    }
+    .error{
+        font-size: 14px;
+        color: rgb(227, 100, 128);
+        padding-left: 10px;
+        display: none;
+        
+    }
+    .cont{
+        background-color: rgb(227, 100, 128);
+        height: 1200px;
+        color: rgb(139, 86, 86);
+        text-align: center;
+        padding-top: 200px; 
+       
+    }
+    .thank{
+        width: 200px;
+        height: 200px;
+    }
+    .text-center{
+        width: 700px;
+        margin: 0 400px;
+    }
+    .contact_info{
+        display: block;
+        position: relative;
+        text-align: right;
+        padding: 0 260px;
+        margin: 60px 0;
+    }
+    .contact_info h2{
+        height: 100px;
+        line-height: 100px;
+    }
+    .interior{
+    
+        width: 360px;
+        height: 280px;
+        object-fit: cover;
+        border-radius: 5px;
+        position: absolute;
+        z-index: 1;
+        left: 17%;
+        
+        
+       
+    }
+    .fasad{
+        width: 360px;
+        height: 280px;
+        object-fit: cover;
+        border-radius: 5px;
+        opacity: 0.8;
+    }
+    h3{
+        height: 40px;
+        margin-bottom: 40px;
+        color: rgb(139, 86, 86);
+        
+    }
+
+    iframe{
+        width: 800px;
+        height: 370px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container{
+        background-color: rgba(247, 243, 232, 1);
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        
+        
+    }
+    
+    .order_form{
+        width: 440px;
+        margin: 60px auto;
+        
+    }
+    form{
+        width: 440px;
+        height: 860px;
+        background-color: bisque;
+        border-radius: 5px;
+        padding: 40px 40px;
+        font-size: 14px;
+        color: rgb(139, 86, 86);
+        display: block;
+        margin-bottom: 20px;
+    }
+    .div1,
+     .div2{
+        width: 280px;
+    }
+    
+    h2{
+        color: rgb(139, 86, 86);
+        text-align: center;
+        font-size: 18px;
+        padding: 10px 25px;
+        font-weight: 500;
+        width: 420px;
+    }
+    .inp{
+        width: 360px;
+        height: 30px;
+        border: none;
+        border-radius: 5px;
+        background-color: rgba(233, 209, 111, 0.182);
+        outline: none;
+        color: rgb(217, 178, 38);
+        padding-left: 20px;
+        font-size: 22px;
+        margin-bottom: 20px;
+        
+        
+    }
+    label{
+        padding-left: 6px;
+        margin-bottom: 20px;
+        
+    }
+    .texta{
+        width: 360px;
+        height: 210px;
+        resize: none;
+        border: none;
+        border-radius: 5px;
+        background-color: rgba(233, 209, 111, 0.182);
+        outline: none;
+        color: rgb(217, 178, 38);
+        padding-left: 20px;
+        font-size: 18px;
+        margin-bottom: 20px;
+        padding-top: 10px;
+    }
+    .texta::placeholder{
+        color: rgb(139, 86, 86);
+        font-size: 14px;
+    }
+    .submit{
+        display: block;
+        margin: auto;
+        margin-top: 30px;
+        width: 300px;
+        height: 60px;
+        border-radius: 10px;
+        border: none;
+        outline: none;
+        background-color: rgb(226, 113, 138);
+        color: rgb(139, 86, 86);
+        font-size: 22px;
+        font-weight: 500;
+        cursor: pointer;
+        box-shadow: 0px 0px 17px 0px rgb(222, 158, 172);
+    }
+    
+    input[type=date]::-webkit-calendar-picker-indicator{
+        background-image: url(pngimg.com\ -\ heart_PNG51253.png);
+        cursor: pointer;
+        
+    }
+    .error{
+        font-size: 14px;
+        color: rgb(227, 100, 128);
+        padding-left: 10px;
+        display: none;
+        
+    }
+    .cont{
+        background-color: rgb(227, 100, 128);
+        height: 1200px;
+        color: rgb(139, 86, 86);
+        text-align: center;
+        padding-top: 200px; 
+       
+    }
+    .thank{
+        width: 200px;
+        height: 200px;
+    }
+    .text-center{
+        width: 700px;
+        margin: 0 400px;
+    }
+    .contact_info{
+        display: none;
+        max-width: 480px;
+        display: block;
+        position: relative;
+        text-align: right;
+        padding: 0 260px;
+        margin: 60px 0;
+    }
+    .contact_info h2{
+        display: none;
+        height: 100px;
+        line-height: 100px;
+    }
+    .interior{
+        display: none;
+        width: 360px;
+        height: 160px;
+        object-fit: cover;
+        border-radius: 5px;
+        position: absolute;
+        left: 40px;
+        top: 0;
+        z-index: 1;
+        
+        
+    }
+    .fasad{
+        display: none;
+        width: 360px;
+        height: 280px;
+        object-fit: cover;
+        border-radius: 5px;
+        opacity: 0.8;
+    }
+    h3{
+        height: 40px;
+        margin-bottom: 20px;
+        color: rgb(139, 86, 86);
+        
+    }
+
+    iframe{
+        width: 440px;
+        height: 370px;
+    }
+    .main{
+        padding-top: 200px;
+    }
+}

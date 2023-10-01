@@ -1,0 +1,339 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    padding: 20px 100px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    color: rgb(139, 86, 86);
+    background-color: rgba(247, 243, 232, 1);
+    text-align: justify;
+}
+
+.newComment{
+    border-bottom: 2px solid rgb(139, 86, 86);
+    padding: 40px 0;
+}
+
+.reviews h3{
+    margin-bottom: 40px;
+}
+.reviews p{
+    line-height: 1.5;
+    font-size: 22px;
+    
+}
+.reviews img{
+    width: 200px;
+    height: 200px;
+    margin-top: 80px;
+}
+#name{
+    width: 300px;
+    height: 60px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 1px 10px rgba(148, 98, 105, 1);
+    outline: none;
+    padding: 10px;
+    font-size: 16px;
+    color: rgb(139, 86, 86);
+}
+#comment{
+    width: 600px;
+    height: 300px;
+    resize: none;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 1px 10px rgba(148, 98, 105, 1);
+    outline: none;
+    padding: 10px;
+    font-size: 16px;
+    color: rgb(139, 86, 86);
+}
+
+#addComment form{
+    display: flex;
+    justify-content: space-between;
+}
+#addComment h5{
+    margin-bottom: 20px;
+}
+#addComment label{
+    height: 40px;
+}
+#button{
+    width: 180px;
+    height: 60px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 1px 10px rgba(148, 98, 105, 1);
+    outline: none;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bolder;
+    background: linear-gradient(to bottom right, bisque, pink);
+    color: rgb(139, 86, 86);
+    cursor: pointer;
+    line-height: 60px;
+
+}
+
+
+  
+
+  
+  .image-slider {
+    position: relative;
+    margin: auto;
+    width: 800px;
+    height: 500px;
+    overflow: hidden;
+  }
+  
+  .image-slider img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 3s ease-in-out;
+    border-radius: 5px;
+  }
+  
+  .image-slider img:first-child {
+    opacity: 1;
+  }
+
+  @media (max-width: 1024px) {
+    .container{
+        padding: 20px 100px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 20px;
+        color: rgb(139, 86, 86);
+        background-color: rgba(247, 243, 232, 1);
+        text-align: justify;
+    }
+    
+    .newComment{
+        border-bottom: 2px solid rgb(139, 86, 86);
+        padding: 40px 0;
+    }
+    
+    .reviews h3{
+        margin-bottom: 40px;
+    }
+    .reviews p{
+        line-height: 1.5;
+        font-size: 22px;
+        
+    }
+    .reviews img{
+        width: 200px;
+        height: 200px;
+        margin-top: 80px;
+    }
+    #name{
+        width: 300px;
+        height: 60px;
+        margin-right: 400px;
+        margin-bottom: 40px;
+        border: none;
+        border-radius: 5px;
+        box-shadow: 0 1px 10px rgba(148, 98, 105, 1);
+        outline: none;
+        padding: 10px;
+        font-size: 16px;
+        color: rgb(139, 86, 86);
+    }
+    #comment{
+        width: 600px;
+        height: 300px;
+        resize: none;
+        border: none;
+        border-radius: 5px;
+        box-shadow: 0 1px 10px rgba(148, 98, 105, 1);
+        outline: none;
+        padding: 10px;
+        font-size: 16px;
+        color: rgb(139, 86, 86);
+       
+    }
+    
+    #addComment form{
+        display: block;
+        text-align: left;
+    }
+    #addComment h5{
+        margin-bottom: 20px;
+    }
+    #addComment label{
+        height: 40px;
+    }
+    #button{
+        width: 180px;
+        height: 60px;
+        border: none;
+        border-radius: 5px;
+        box-shadow: 0 1px 10px rgba(148, 98, 105, 1);
+        outline: none;
+        text-align: center;
+        font-size: 16px;
+        font-weight: bolder;
+        background: linear-gradient(to bottom right, bisque, pink);
+        color: rgb(139, 86, 86);
+        cursor: pointer;
+        line-height: 60px;
+        margin-top: 40px;
+    
+    }
+    
+    
+      
+    
+      
+      .image-slider {
+        position: relative;
+        margin: auto;
+        width: 800px;
+        height: 500px;
+        overflow: hidden;
+      }
+      
+      .image-slider img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        transition: opacity 3s ease-in-out;
+        border-radius: 5px;
+      }
+      
+      .image-slider img:first-child {
+        opacity: 1;
+      }
+  }
+
+  @media (max-width: 480px) {
+    .container{
+        padding: 20px 20px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 18px;
+        color: rgb(139, 86, 86);
+        background-color: rgba(247, 243, 232, 1);
+        text-align: justify;
+    }
+    
+    .newComment{
+        border-bottom: 2px solid rgb(139, 86, 86);
+        padding: 40px 0;
+    }
+    
+    .reviews h3{
+        margin-bottom: 40px;
+    }
+    .reviews p{
+        line-height: 1.5;
+        font-size: 16px;
+        
+    }
+    .reviews img{
+        width: 100px;
+        height: 100px;
+        margin-top: 20px;
+    }
+    #name{
+        width: 300px;
+        height: 40px;
+        margin-right: 400px;
+        margin-bottom: 40px;
+        border: none;
+        border-radius: 5px;
+        box-shadow: 0 1px 10px rgba(148, 98, 105, 1);
+        outline: none;
+        padding: 10px;
+        font-size: 16px;
+        color: rgb(139, 86, 86);
+    }
+    #comment{
+        width: 400px;
+        height: 200px;
+        resize: none;
+        border: none;
+        border-radius: 5px;
+        box-shadow: 0 1px 10px rgba(148, 98, 105, 1);
+        outline: none;
+        padding: 10px;
+        font-size: 16px;
+        color: rgb(139, 86, 86);
+       
+    }
+    
+    #addComment form{
+        display: block;
+        text-align: left;
+    }
+    #addComment h5{
+        margin-bottom: 20px;
+    }
+    #addComment label{
+        height: 40px;
+    }
+    #button{
+        width: 180px;
+        height: 40px;
+        border: none;
+        border-radius: 5px;
+        box-shadow: 0 1px 10px rgba(148, 98, 105, 1);
+        outline: none;
+        text-align: center;
+        font-size: 16px;
+        font-weight: bolder;
+        background: linear-gradient(to bottom right, bisque, pink);
+        color: rgb(139, 86, 86);
+        cursor: pointer;
+        line-height: 40px;
+        margin-top: 40px;
+    
+    }
+    #menu_big a{
+        text-decoration: none;
+        color: white;
+        cursor: pointer;
+     }
+     #menu_big a:hover{
+        color: bisque;
+     }
+    
+      
+    
+      
+      .image-slider {
+        position: relative;
+        margin: auto;
+        width: 400px;
+        height: 240px;
+        overflow: hidden;
+      }
+      
+      .image-slider img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        transition: opacity 3s ease-in-out;
+        border-radius: 5px;
+      }
+      
+      .image-slider img:first-child {
+        opacity: 1;
+      }
+  }
+  
+  
+  
+  
+  
+  

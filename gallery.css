@@ -1,0 +1,162 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+.sextion1{
+    text-align: center;
+    margin-top: 40px;
+}
+.player{
+    border-radius: 5px;
+}
+
+/* Стили для аккордеона */
+.accordion {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  margin-top: 40px;
+}
+
+.accordion-item {
+  
+  display: flex;
+}
+
+.accordion-btn {
+  height: 300px;
+  width: 40px;
+  background: linear-gradient(to bottom right, bisque, pink);
+  text-align: left;
+  padding: 10px;
+  background-color: #f2f2f2;
+  cursor: pointer;
+  border: none;
+}
+
+.accordion-content {
+  display: none;
+  
+}
+.accordion-content img {
+  width: 600px;
+  height: 300px;
+  object-fit: cover;
+}
+
+/* Стили для открытого раздела */
+.accordion-item.active .accordion-content {
+  display: block;
+}
+
+
+
+
+
+
+#menu_big a{
+  text-decoration: none;
+  color: rgb(139, 86, 86);
+  cursor: pointer;
+}
+#menu_big a:hover{
+  color: rgb(210, 88, 165);
+}
+@media (max-width: 1024px) {
+  .player{
+    width: 600px;
+    height: 400px;
+  }
+
+  /* Стили для аккордеона */
+.accordion {
+  max-width: 900px;
+  margin: auto;
+  display: flex;
+  margin-top: 40px;
+}
+
+.accordion-item {
+  
+  display: flex;
+}
+
+.accordion-btn {
+  height: 200px;
+  width: 40px;
+  background: linear-gradient(to bottom right, bisque, pink);
+  text-align: left;
+  padding: 10px;
+  background-color: #f2f2f2;
+  cursor: pointer;
+  border: none;
+}
+
+.accordion-content {
+  display: none;
+  
+}
+.accordion-content img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Стили для открытого раздела */
+.accordion-item.active .accordion-content {
+  display: block;
+}
+}
+
+
+@media (max-width: 480px) {
+  .player{
+    width: 420px;
+    height: 260px;
+  }
+
+  /* Стили для аккордеона */
+.accordion {
+  max-width: 440px;
+  margin: auto;
+  display: block;
+  margin-top: 40px;
+}
+
+.accordion-item {
+  
+  display: block;
+  text-align: center;
+}
+
+.accordion-btn {
+  height: 20px;
+  width: 360px;
+  background: linear-gradient(to bottom right, bisque, pink);
+  text-align: left;
+  padding: 10px;
+  background-color: #f2f2f2;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+}
+
+.accordion-content {
+  display: none;
+  
+}
+.accordion-content img {
+  width: 360px;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Стили для открытого раздела */
+.accordion-item.active .accordion-content {
+  display: block;
+}
+}
+  
