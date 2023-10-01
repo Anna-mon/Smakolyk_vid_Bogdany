@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/catalog27.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    
+</head>
+<body>
+
+  <div id="loader" style="visibility: invisible;">
+    <div id="loading"><img src="img/pngimg.com - heart_PNG51253.png"></div>
+    
+  </div> 
+
+  <div class="activ" id="activ" style="position: fixed; z-index: 3;width: 100%; height: 100%;   background-color: aliceblue; opacity: 0.2; display: none;" ></div>
+    <div class="wrapper">
+        
+      <header class="header">
+       <a href="index.html" style="text-decoration: none;"> <div class="logo" id="logo_top">
+        <p>#Смаколик</p>
+        <div style="display: flex;">
+          <p>від Богдани</p>
+          <img src="img/pngimg.com - heart_PNG51253.png" alt="">
+        </div>
+    </div></a>
+       <div style="position: relative;">
+         <ul class="menu">
+          <li id="burger_menu"><i class="fa-solid fa-bars"></i></li>
+           <li><a href="index.html">Головна сторінка</a></li>
+           <li><a href="range.html">Асортимент</a></li>
+           <li><a href="catalog.html" style="color: rgb(210, 88, 165);">Каталог</a></li>
+           <li><a href="gallery.html">Галерея</a></li>
+           <li><a href="reviews.html">Відгуки</a></li>
+           <li><a href="contacts.html">Контакти</a></li>
+           <li><a href="order.html"><i class="fa-solid fa-cart-shopping"></i>
+         </ul>
+         <div id="menu_big" style="position: absolute; z-index: 10; top: 80px; right: 10px;">
+           <ul>
+               <li><a href="index.html">Головна сторінка</a></li>
+               <li><a href="range.html">Асортимент</a></li>
+               <li><a href="catalog.html" style="color: bisque;">Каталог</a></li>
+               <li><a href="gallery.html">Галерея</a></li>
+               <li><a href="reviews.html">Відгуки</a></li>
+               <li><a href="contacts.html">Контакти</a></li>
+               <li><a href="order.html" >Кошик</a></li>
+             </ul>
+       </div>
+       </div>
+
+   </header>
+        <main style="position: relative;">
+            <section class="section_one">
+              
+              <div class="slider" style="margin: auto;">
+                <ul>
+                    <li><img src="img/1632356551_29-mykaleidoscope-ru-p-krasivie-deserti-krasivo-foto-31.jpg"></li>
+                    <li><img src="img/2.png" alt=""></li>
+                    <li><img src="img/3.png" alt=""></li>
+                    <li><img src="img/4.png" alt=""></li>
+                    <li><img src="img/5.png" alt=""></li>
+                </ul>
+            </div>
+            <h2>Оберіть категорію</h2>
+
+
+             
+
+            </section>
+            <section class="section_second">
+                  
+              <div id="select_cakes" class="select_cakes">
+
+                  <div class="all_sweets">
+                    <div id="branded_cakes">
+                       <img src="img/торт фирменный.jpg" alt="">
+                       <h3>Фірмові торти</h3>
+                    </div>
+                    <div id="cakes_to_order">
+                       <img src="img/торт на заказ.jpg" alt="" >
+                       <h3>Торти на замовлення</h3>
+                    </div>
+                    <div id="cupcakes">
+                       <img src="img/пирожные.jpeg" alt="">
+                       <h3>Тістечка</h3>
+                    </div>
+                    <div id="sweets">
+                      <img src="img/сладости.jpeg" alt="">
+                      <h3>Солодощі</h3>
+                   </div>
+                   <div id="">
+                    <img src="img/1680504990_food-pibig-info-p-tort-chernii-les-shokoladnii-instagram-1-min.jpg" alt="">
+                    <h3>Коржі</h3>
+                 </div>
+                 <div id="">
+                    <img src="img/sladkij-tort-s-jogurtom-na-desert-min.jpg" alt="" >
+                    <h3>Начинки</h3>
+                 </div>
+                 <div id="">
+                    <img src="img/images-min.jpg" alt="">
+                    <h3>Тематичні прикраси</h3>
+                 </div>
+                 <div id="">
+                   <img src="img/8635c4b727323f79f6a3f91d0d591657-min.jpg" alt="">
+                   <h3>Топери</h3>
+                </div>
+                </div>
+                </div>
+                <div class="container_all">
+                  <h2 id="catalog">КАТАЛОГ</h2>
+                  <div id="container1"></div>
+                  <div id="pagination"></div>
+
+                  <div id="modal_cart" class="modal_cart">
+                    <div id="appendDivCart">
+                      <div id="cart_close">
+                        <i class="fa-solid fa-square-xmark"></i>
+                        <div id="hover_close" style="display: none;">Закрити</div>
+                      </div>
+                    </div>
+                    
+                  </div>
+                  
+                  <form action="" id="form">
+                    <div id="appendDiv">
+                      <div id="calc" style="position: relative;">
+                        <div id="calculation">
+                         
+                         <div style="display: flex; flex-wrap: wrap; margin: auto;"> 
+                         <label for="diameter" class="label_option">Діаметр
+                            <select  name="diameter" value="" id="diameter" class="select_option" required>
+                            <option value="маленький" selected>маленький</option>
+                            <option value="середній">середній</option>
+                            <option value="великий">великий</option>
+                          </select></label>
+                          <label for="height" class="label_option">Висота (кількість коржів)
+                            <select name="height" value="" id="heightCake" class="select_option" required>
+                              <option value="низький" selected>низький</option>
+                              <option value="середній">середній</option>
+                              <option value="високий">високий</option>
+                            </select></label><br>
+                         <label for="decoration" class="label_option">Прикраси
+                              <select name="decoration" value="" id="decoration" class="select_option" required>
+                                <option value="немає" selected>немає</option>
+                                <option value="крем, глазур">крем, глазур</option>
+                                <option value="тематичні прикраси">тематичні прикраси</option>
+                                <option value="сезонні фрукти, ягоди">сезонні фрукти, ягоди</option>
+                              </select></label>
+                         <label for="decoration2" class="label_option">Інші святкові прикраси
+                                <select name="decoration2" value="" id="decoration2" class="select_option" required>
+                                  <option value="немає" selected>немає</option>
+                                  <option value="неїстівна фігура">неїстівна фігура</option>
+                                  <option value="топер з кулями">топер з кулями</option>
+                                  <option value="топер з дерева">топер з дерева</option>
+                                  <option value="топер з картону">топер з картону</option>
+                                  <option value="топер з вогниками">топер з вогниками</option>
+                                  <option value="святкова свічка">святкова свічка</option>
+                                </select></label>
+                         <label for="package" class="label_option">Пакування
+                                  <select name="package" value="" id="package" class="select_option" required>
+                                  <option value="звичайне" selected>звичайне</option>
+                                  <option value="тематичне">тематичне</option>
+                                  
+                                </select></label>
+                         <label for="delivery" class="label_option">Доставка
+                                  <select name="delivery" value="" id="delivery" class="select_option" required>
+                                  <option value="самовивоз" selected>самовивоз</option>
+                                  <option value="доставка по місту">доставка по місту</option>
+                                  <option value="доставка по області">доставка по області</option>
+                                  
+                                </select></label>      
+                          </div> 
+                          <div class="total_result">
+                              <div id="kiloQuant" class="kiloQuant">
+                              </div>
+                              <div id="res" class="result">
+                              </div>
+                          </div>  
+                         </div>
+                        <div class="order_info" id="order_info">
+                          <p>Якщо Вас влаштовує приблизна вартість замовлення, натисніть "Додати в корзину"</p>
+    
+                        </div>
+                        <div id="action">
+                          
+                          <div id="minus" class="submit">Закрити</div>
+                          <div id="appendCake" class="submit">Додати в корзину</div>
+                        </div>
+                        
+                          <div class="div2">
+                      
+                        </div>
+                      </div>
+                      
+    
+                    </div>
+                    
+                  </form>
+  
+              </div>
+            </section>
+            <section id="section_third">
+              <div class="wiki-block">
+                <p data-lang="wiki-title">
+                  Введіть те, що вас цікавить і отримуйте інформацію з Вікіпедія
+                </p>
+                <input
+                  id="inp"
+                  type="text"
+                  
+                  onchange="getRandomLinks()"
+                />
+                <ul id="result"></ul>
+              </div>
+            </section>
+            
+        </main>
+        <footer class="footer">
+          <div class="footer_logo">
+              <div class="logo2">
+                  <p>#Смаколик</p>
+                  <div style="display: flex;">
+                    <p>від Богдани</p>
+                    <img src="img/pngimg.com - heart_PNG51253.png" alt="" style="position: absolute; top: 15%; right: 5%;height: 60px; width: 60px;">
+                  </div>
+              </div>
+              <div class="logo_href">
+                  <a href="https://www.facebook.com/profile.php?id=100027852041225"><img src="img/logofb.png" alt=""></a>
+                  <a href="https://www.instagram.com/nataliia_priyma?fbclid=IwAR3f5OdwFQO6Wb100NgHYWXHze8zBhptMTRMk4BE_jdH3mO2i1TF9ORrZlM"><img src="img/logoinsta.png" alt=""></a>
+                  <a href="https://t.me/natalia_pryima"><img src="img/logoteleg.png" alt=""></a>
+                  <a href=""><img src="img/logopost.png" alt=""></a>
+              </div>
+          </div>
+          <div class="footer_menu">
+              <p>Меню</p>
+              <ul class="footer_menu_ul">
+                  <li><a href="index.html" >Головна сторінка</a></li>
+                  <li><a href="">Асортимент</a></li>
+                  <li><a href="catalog.html" style="color: bisque;" >Каталог</a></li>
+                  <li><a href="gallery.html">Галерея</a></li>
+                  <li><a href="reviews.html">Відгуки</a></li>
+                  <li><a href="contacts.html">Контакти</a></li>
+                </ul>
+          </div>
+          <div class="footer_contact">
+              <p>Контакти</p>
+              <ul class="footer_contact_ul">
+                  <li>Телефон <span>095 333 64 00</span></li>
+                  <li>Телефон <span>097 333 64 00</span> </li>
+                  <li>Почта <span>bananamouse@gmail.com</span> </li>
+                  <li>Графік роботи <span>10:00 - 22:00</span> </li>
+                  <li>Доставка по Київу та області</li>
+              </ul>
+          </div>
+          <div class="footer_news">
+              <p>Залишайтесь в курсі новин</p>
+              <p id="search">Пошук по каталогу<i class="fa-solid fa-magnifying-glass"onclick="searchCatalog()"></i></p>
+              <input type="text" id="search_input">
+              <div id="dialog" style="display: none;">
+                <p>В нас немає такої продукції) пошукайте, будь ласка, ще)</p>
+               </div>
+              <div id="cart_shopping_to"><a href="order.html"><i class="fa-solid fa-cart-shopping"></i></a></div>
+  
+          </div>
+          <div class="scpoll_up"><a href="#logo_top"> <i class="fa-solid fa-arrow-up fa-fade"></i></a></div>
+      </footer>
+      </div>
+      <script src="js/catalog.js"></script> 
+      <script  src="js/burger.js"></script>
+      
+      <script src="js/all.min.js"></script>
+      <script  src="js/search.js"></script>
+      <script  src="js/sliders.js"></script>
+      
+
+
+      
+</body>
+</html>

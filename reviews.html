@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Відгуки</title>
+    <link href="https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reviews.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <a href="index.html" style="text-decoration: none;"><div class="logo" id="logo_top">
+                <p>#Смаколик</p>
+                <div style="display: flex;">
+                  <p>від Богдани</p>
+                  <img src="img/pngimg.com - heart_PNG51253.png" alt="">
+                </div>
+            </div></a>
+           <div style="position: relative;">
+             <ul class="menu">
+                <li id="burger_menu"><i class="fa-solid fa-bars"></i></li>
+               <li><a href="index.html">Головна сторінка</a></li>
+               <li><a href="range.html">Асортимент</a></li>
+               <li><a href="catalog.html">Каталог</a></li>
+               <li><a href="gallery.html">Галерея</a></li>
+               <li><a href="reviews.html" style="color: rgb(210, 88, 165);">Відгуки</a></li>
+               <li><a href="contacts.html">Контакти</a></li>
+               <li><a href="order.html" ><i class="fa-solid fa-cart-shopping"></i>
+             </ul>
+             <div id="menu_big" style="position: absolute;z-index: 2; top: 80px; right: 40px;">
+               <ul>
+                   <li><a href="index.html">Головна сторінка</a></li>
+                   <li><a href="range.html">Асортимент</a></li>
+                   <li><a href="catalog.html">Каталог</a></li>
+                   <li><a href="gallery.html">Галерея</a></li>
+                   <li><a href="reviews.html" style="color: bisque;">Відгуки</a></li>
+                   <li><a href="contacts.html">Контакти</a></li>
+                   <li><a href="order.html" >Кошик</a></li>
+                 </ul>
+           </div>
+           </div>
+   
+       </header>
+        <main class="container">
+            <section class="slid" style="display: flex; justify-content: space-between;">
+                
+
+                <div class="image-slider">
+                    <img src="img/1674721828_balthazar-club-p-tort-stakannik-oboi-6.jpg">
+                    <img src="img/1674721862_balthazar-club-p-tort-stakannik-oboi-47.jpg" alt="Изображение 2">
+                    <img src="img/1674721837_balthazar-club-p-tort-stakannik-oboi-12.jpg" alt="Изображение 3">
+                </div>
+
+            </section>
+            <section class="reviews">
+                <div>
+                    <img src="img/2.png" alt="" style="border-radius: 5px;">
+                  <h3>Залиште, будь ласка, відгук про нас)</h3> 
+                  <p>Шановні друзі та гості! <br>
+
+                    Ми завжди прагнемо зробити Ваше відвідування нашої кондитерськой незабутнім та смачним. Ваша думка – для нас важлива, і ми були б вдячні, якби Ви поділилися вашими враженнями про нашу продукцію та обслуговування.
+                    
+                    Якщо у Вас є кілька хвилин, будь ласка, залиште свій відгук про Ваш досвід у "Смаколик від Богдани". Ми цінуємо кожне Ваше слово та використовуємо Ваші відгуки, щоб покращувати нашу роботу та робити наші десерти ще краще.
+                    
+                    Чим би Ви хотіли поділитися - будь то  улюблені десерти, увага до деталей в обслуговуванні або ще щось, що Ви вважаєте важливим - це допоможе нам зростати і розвиватися.
+                    
+                    Дякую, що вибираєте "Смаколик від Богдани"! Ми з нетерпінням чекаємо на Ваші коментарі і сподіваємося бачити Вас знову. <br>
+                    
+                    З повагою, <br>
+                    Наталія Прийма, "Смаколик від Богдани"</p>
+                    <img src="img/pngimg.com - heart_PNG51253.png" alt="">
+                </div>
+                <div id="comments">
+                  <div>
+                    <h5>Anna</h5>
+                    <p>Mon Jun 19 2023</p>
+                    <p>Дякую! Все дуже смачне!)</p>
+                  </div>
+                  <div id="comment_name">   
+                  </div>
+                  <div id="comment_field"></div>
+                </div> 
+                <div id="addComment">
+                    <h5>Залиште відгук:</h5>
+                    <form id="form" onsubmit="false">
+                        <label for="name">
+                            Ім'я <input type="text" name="userName" id="name" required>
+                        </label> 
+                        <label for="comment">Коментар</label>
+                        <textarea name="comment" id="comment"  required></textarea>
+                        <div id="button" onclick="addComment()">Відправити</div>
+                    </form>
+                     
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer_logo">
+                <div class="logo2">
+                    <p>#Смаколик</p>
+                    <div style="display: flex;">
+                      <p>від Богдани</p>
+                      <img src="img/pngimg.com - heart_PNG51253.png" alt="" style="position: absolute; top: 15%; right: 5%;height: 60px; width: 60px;">
+                    </div>
+                </div>
+                <div class="logo_href">
+                    <a href="https://www.facebook.com/profile.php?id=100027852041225"><img src="img/logofb.png" alt=""></a>
+                    <a href="https://www.instagram.com/nataliia_priyma?fbclid=IwAR3f5OdwFQO6Wb100NgHYWXHze8zBhptMTRMk4BE_jdH3mO2i1TF9ORrZlM"><img src="img/logoinsta.png" alt=""></a>
+                    <a href="https://t.me/natalia_pryima"><img src="img/logoteleg.png" alt=""></a>
+                    <a href=""><img src="img/logopost.png" alt=""></a>
+                </div>
+            </div>
+            <div class="footer_menu">
+                <p>Меню</p>
+                <ul class="footer_menu_ul">
+                    <li><a href="index.html" >Головна сторінка</a></li>
+                    <li><a href="">Асортимент</a></li>
+                    <li><a href="catalog.html">Каталог</a></li>
+                    <li><a href="gallery.html">Галерея</a></li>
+                    <li><a href="reviews.html" style="color: bisque;" >Відгуки</a></li>
+                    <li><a href="contacts.html">Контакти</a></li>
+                  </ul>
+            </div>
+            <div class="footer_contact">
+                <p>Контакти</p>
+                <ul class="footer_contact_ul">
+                    <li>Телефон <span>095 333 64 00</span></li>
+                    <li>Телефон <span>097 333 64 00</span> </li>
+                    <li>Почта <span>bananamouse@gmail.com</span> </li>
+                    <li>Графік роботи <span>10:00 - 22:00</span> </li>
+                    <li>Доставка по Київу та області</li>
+                </ul>
+            </div>
+            <div class="footer_news" style="position: relative;">
+                <a href="gallery.html"><p>Залишайтесь в курсі новин</p></a>
+                <p id="search">Пошук по каталогу<i class="fa-solid fa-magnifying-glass" onclick="searchCatalog()"></i></p>
+                <input type="text" id="search_input">
+                
+                <div id="dialog" style="display: none;">
+                   <p>В нас немає такої продукції) пошукайте, будь ласка, ще)</p>
+                </div>
+                
+                <div id="cart_shopping_to"><a href="order.html"><i class="fa-solid fa-cart-shopping"></i></a></div>
+    
+            </div>
+            <div class="scpoll_up"><a href="#logo_top"> <i class="fa-solid fa-arrow-up fa-fade"></i></a></div>
+        </footer>
+      </div>  
+      
+    <script src="js/reviews.js"></script>  
+    <script src="js/all.min.js"></script>
+    <script src="js/search.js"></script>
+    <script src="js/burger.js"></script>
+</body>
+</html>

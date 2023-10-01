@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кошик</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Shantell+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/order.css">
+
+
+</head>
+<body>
+    <div class="wrapper">
+        
+      <header class="header">
+        <a href="index.html" style="text-decoration: none;"><div class="logo" id="logo_top">
+          <p>#Смаколик</p>
+          <div style="display: flex;">
+            <p>від Богдани</p>
+            <img src="img/pngimg.com - heart_PNG51253.png" alt="">
+          </div>
+      </div></a>
+       <div style="position: relative;">
+         <ul class="menu">
+           <li id="burger_menu"><i class="fa-solid fa-bars"></i></li>
+           <li><a href="index.html" >Головна сторінка</a></li>
+           <li><a href="range.html">Асортимент</a></li>
+           <li><a href="catalog.html">Каталог</a></li>
+           <li><a href="gallery.html">Галерея</a></li>
+           <li><a href="reviews.html">Відгуки</a></li>
+           <li><a href="contacts.html">Контакти</a></li>
+           <li><a href="order.html" style="color: rgb(210, 88, 165);"><i class="fa-solid fa-cart-shopping"></i>
+         </ul>
+         
+         
+         <div id="menu_big" style="position: absolute;z-index: 2; top: 80px; right: 40px;">
+           <ul>
+               <li><a href="index.html">Головна сторінка</a></li>
+               <li><a href="range.html">Асортимент</a></li>
+               <li><a href="catalog.html">Каталог</a></li>
+               <li><a href="gallery.html">Галерея</a></li>
+               <li><a href="reviews.html">Відгуки</a></li>
+               <li><a href="contacts.html">Контакти</a></li>
+               <li><a href="order.html" style="color: rgb(210, 88, 165);">Кошик</a></li>
+
+             </ul>
+       </div>
+
+
+
+       </div>
+
+   </header>
+        <main style="position: relative;">
+            <section>
+             <div id="order_cart">
+               <div id="order_all">
+                 <div id="name_img">
+                   <div id="order_name"></div>
+                   <div id="order_img"></div>
+                 </div>
+                 <div id="price_name"></div>
+                 <ul>
+                      <li id="diameter_order"></li>
+                      <li id="height_order"></li>
+                      <li id="decor_order"></li>
+                      <li id="decor2_order"></li>
+                      <li id="package_order"></li>
+                      <li id="delivery_order"></li>
+                 </ul>
+                 <div id="show_catalog" class="but_form">Каталог</div>
+                 <div id="show_form" class="but_form">Замовити</div>
+                 <div id="clear_form" class="but_form">Видалити</div>
+
+
+                 <div id="out_name"></div>
+                </div>
+
+                <div id="no_order" style="display: none;">
+                  <p>Ваш кошик порожній)</p>
+                  <div id="show_catalog2" class="but_form">Каталог</div>
+                </div>
+
+                <div id="order_form_cart" >
+                  <div id="img_form">
+                    <img src="img/сладости.jpeg" alt="">
+                  </div>
+                  <div id="form_cart_out" style="display: none;">
+                    <form onsubmit="return checkForm()" action="mail.php" method="POST" id="order_form">
+                      <div class="div1">
+                        <label for="name">Ваше ім'я<br><input type="text" id="name" class="inp" name="user_name"></label><br>
+                        <div id="errorName" class="error">В імені має бути більше однієї літери</div>
+                        <div id="errorName2" class="error">В імені не повинно бути цифр</div>
+                        <label for="phone">Ваш телефон<br><input type="text" id="phone" class="inp" name="user_phone"></label><br>
+                        <div id="errorTel" class="error">Має бути щонайменше 10 цифр</div>
+                          <div id="errorTel2" class="error">Введіть лише цифри</div>
+                        <label for="email">Ваш E-mail<br><input type="text" id="email" class="inp" name="user_email"></label><br>
+                        <div id="errorEmail" class="error">Введіть, будь ласка,  коректний e-mail</div>
+                        <div id="errorEmail2" class="error">Заповніть, будь ласка, це поле</div>
+                        <label for="address">Адреса доставки<br><input type="text" id="address" class="inp" name="user_address"></label><br>
+                        <div id="errorAddress" class="error">Заповніть, будь ласка, це поле</div>
+                        <label for="date">Дата доставки<br><input type="date" id="date" class="inp" min="2023-07-01" name="user_date"></label><br>
+                        <div id="errorDate" class="error">Оберіть, будь ласка, дату</div>
+                      </div>
+                      <div class="div2">
+                        <label for="texta">Ваш коментар<br><textarea name="user_texta" id="texta"  class="texta" placeholder="Напишіть, що саме Ви бажаєте замовити"></textarea></label>
+                        <input type="submit" id="submit" class="submit" value="Відправити">
+                      </div>
+                    </form>
+                  </div>
+                </div>
+            </div>   
+            </section>
+            
+        </main>
+        <footer class="footer">
+          <div class="footer_logo">
+              <div class="logo2">
+                  <p>#Смаколик</p>
+                  <div style="display: flex;">
+                    <p>від Богдани</p>
+                    <img src="img/pngimg.com - heart_PNG51253.png" alt="" style="position: absolute; top: 15%; right: 5%;height: 60px; width: 60px;">
+                  </div>
+              </div>
+              <div class="logo_href">
+                  <a href="https://www.facebook.com/profile.php?id=100027852041225"><img src="img/logofb.png" alt=""></a>
+                  <a href="https://www.instagram.com/nataliia_priyma?fbclid=IwAR3f5OdwFQO6Wb100NgHYWXHze8zBhptMTRMk4BE_jdH3mO2i1TF9ORrZlM"><img src="img/logoinsta.png" alt=""></a>
+                  <a href="https://t.me/natalia_pryima"><img src="img/logoteleg.png" alt=""></a>
+                  <a href=""><img src="img/logopost.png" alt=""></a>
+              </div>
+          </div>
+          <div class="footer_menu">
+              <p>Меню</p>
+              <ul class="footer_menu_ul">
+                  <li><a href="index.html" >Головна сторінка</a></li>
+                  <li><a href="range.html">Асортимент</a></li>
+                  <li><a href="catalog.html">Каталог</a></li>
+                  <li><a href="gallery.html">Галерея</a></li>
+                  <li><a href="reviews.html">Відгуки</a></li>
+                  <li><a href="contacts.html">Контакти</a></li>
+                </ul>
+          </div>
+          <div class="footer_contact">
+              <p>Контакти</p>
+              <ul class="footer_contact_ul">
+                  <li>Телефон <span>095 333 64 00</span></li>
+                  <li>Телефон <span>097 333 64 00</span> </li>
+                  <li>Почта <span>bananamouse@gmail.com</span> </li>
+                  <li>Графік роботи <span>10:00 - 22:00</span> </li>
+                  <li>Доставка по Київу та області</li>
+              </ul>
+          </div>
+          <div class="footer_news" style="position: relative;">
+            <a href="gallery.html"><p>Залишайтесь в курсі новин</p></a>
+            <p id="search">Пошук по каталогу<i class="fa-solid fa-magnifying-glass" onclick="searchCatalog()"></i></p>
+            <input type="text" id="search_input">
+            
+            <div id="dialog" style="display: none;">
+               <p>В нас немає такої продукції) пошукайте, будь ласка, ще)</p>
+            </div>
+            
+            <div id="cart_shopping_to"><a href="order.html"><i class="fa-solid fa-cart-shopping" style="color: bisque;"></i></a></div>
+
+        </div>
+          <div class="scpoll_up"><a href="#logo_top"> <i class="fa-solid fa-arrow-up fa-fade"></i></a></div>
+      </footer>
+      </div>
+
+
+      <script src="js/order.js"></script>
+      <script src="js/all.min.js"></script>
+      <script  src="js/search.js"></script>
+      <script  src="js/burger.js"></script>
+</body>
+</html>
